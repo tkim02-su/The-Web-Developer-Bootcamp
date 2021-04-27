@@ -1,4 +1,32 @@
+body {
+    background-color: #536872;
+}
+
 img {
-    width:30%;
-    margin: 1.666%;
+    cursor: pointer;
+    width:25%;
+    margin: 3.666%;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+img:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    border-radius: 3rem;
+    border: 4px solid;
+    border-color: #DEA5A4;
+}
+
+nav {
+    text-transform:uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 25%;
+    margin-left: 3.666%;
+    padding: 20px 0;
+    font-family: 'Antonio', sans-serif;
+    font-size: 30px;
+
 }
