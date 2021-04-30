@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Convert the Temperature</h1>
+        <div id="app">
+            <form id="form-temperatures">
+                <div id="to-fahrenheit-container">
+                    <h2>Celsius to Fahrenheit</h2>
+                    <div class="value-container">
+                        <h3>Temperature in Â°C</h3>
+                        <input type="text" id="inputCelsius" />
+                    </div>
+                    <div class="value-container">
+                        <h3>Temperature in Â°F</h3>
+                        <p id="converted-value-celsius"></p>
+                    </div>
+                </div>
+                <input id="convert-button" onclick="convertCtoF()" type="button" value="convert" />
+                <div id="to-celsius-container">
+                    <h2>Fahrenheit to Celsius</h2>
+                    <div class="value-container">
+                        <h3>Temperature in Â°F</h3>
+                        <input type="text" id="inputFahrenheit" />
+                    </div>
+                    <div class="value-container">
+                        <h3>Temperature in Â°C</h3>
+                        <p id="converted-value-fahrenheit"></p>
+                    </div>
+                </div>
+                <input id="convert-button" onclick="convertFtoC()" type="button" value="convert" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
