@@ -104,3 +104,42 @@ for (let i = 0; i < seatingChart.length; i++) {
         console.log(row[j])
     }
 }
+
+// function:
+function rant(message) {
+    console.log(message.toUpperCase());
+    console.log(message.toUpperCase());
+    console.log(message.toUpperCase());
+}
+
+// multiple arguments exercise
+// define isSnakeEyes below:
+
+function isSnakeEyes(a, b) {
+    if ((a == '1') && (b == '1')) {
+        console.log("Snake Eyes!");
+    } else {
+        console.log("Not Snake Eyes!");
+    }
+}
+
+// Capitalize the first letter Exercise
+
+// DEFINE YOUR FUNCTION BELOW:
+function capitalize(str) {
+    let newStr = str.slice(0, 1).toUpperCase();
+    let remainStr = str.slice(1);
+    return newStr + remainStr;
+}
+
+// Sum Array Exercise
+// DEFINE YOUR FUNCTION BELOW:
+function sumArray(num) {
+    let total = 0;
+
+    for (let i = 0; i < num.length; i++) {
+        total = total + parseInt(num[i]);
+    }
+    return total;
+}
+
