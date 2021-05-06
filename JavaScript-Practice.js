@@ -143,3 +143,45 @@ function sumArray(num) {
     return total;
 }
 
+// Method Exercise
+const square = {
+    area: function (x) {
+        return x * x;
+    },
+    perimeter: function (x) {
+        return 4 * x;
+    }
+};
+
+// Egg Laying Exercise
+const hen = {
+    name: "Helen",
+    eggCount: 0,
+    layAnEgg() {
+        this.eggCount++;
+        return "EGG";
+    }
+};
+
+// Map Practice
+function cleanNames(names) {
+    const newArray = names.map(function (e) {
+        return e.trim();
+    });
+    return newArray;
+}
+
+// Arrow Function Practice
+const greet = (str) => {
+    return `Hey ${str}!`;
+};
+
+// Filter exercise
+function validUserNames(str) {
+    return str.filter(strings => strings.length < 10);
+}
+
+
+
+
+
