@@ -181,6 +181,11 @@ function validUserNames(str) {
     return str.filter(strings => strings.length < 10);
 }
 
+// Some / Every Exercise
+function allEvens(str) {
+    return str.every(num => num % 2 === 0);
+}
+
 
 
 
