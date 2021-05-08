@@ -209,5 +209,35 @@ function allEvens(str) {
 const image = document.getElementById("unicorn");
 const heading = document.getElementById("mainheading");
 
+// querySelector Practice
 
+// HTML code
+
+// <!DOCTYPE html>
+// <html>
+
+// <head>
+//     <title>Todos</title>
+// </head>
+
+// <body>
+//     <h1>Garden Todos</h1>
+//     <input type="text" placeholder="New Todo">
+//     <ul>
+//         <li>Start Seedlings</li>
+//         <li class="done">Deadhead Zinnias</li>
+//         <li class="done">Water Tomatoes</li>
+//         <li class="done">Harvest Potatoes</li>
+//         <li>Prune Roses</li>
+//     </ul>
+//     <label>Delete All</label>
+//     <input type="checkbox" id="scales" name="scales" checked>
+
+// </body>
+
+// </html>
+
+// JavaScript code
+const doneTodos = document.querySelectorAll('.done');
+const checkbox = document.querySelector("input[type='checkbox']");
 
