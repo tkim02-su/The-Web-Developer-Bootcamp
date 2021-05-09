@@ -241,3 +241,88 @@ const heading = document.getElementById("mainheading");
 const doneTodos = document.querySelectorAll('.done');
 const checkbox = document.querySelector("input[type='checkbox']");
 
+
+// Manipulating Attributes Practice
+
+{/* <body>
+    <!--DONT CHANGE ANYTHING IN THIS FILE, PLEASE!-->
+    <h1>Which Came First?</h1>
+    <img id="egg" src="https://www.flaticon.com/svg/static/icons/svg/528/528166.svg" width="200px" alt="egg">
+    <!--Icons made by http://www.freepik.com-->
+</body> */}
+
+// The url you need: 'https://www.flaticon.com/svg/static/icons/svg/3523/3523063.svg'
+
+document.querySelector('img').src = 'https://www.flaticon.com/svg/static/icons/svg/3523/3523063.svg';
+document.querySelector('img').alt = 'chicken';
+
+// Magical Forest Circle Exercise
+// <!DOCTYPE html>
+
+// <head>
+//     <title>Forest</title>
+//     <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+//     <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+//     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+// </head>
+
+// <body>
+//    <div id="container">
+//         <h1>I &hearts; Trees</h1>
+//         <img src="https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="">
+//     </div>
+// </body>
+
+const container = document.querySelector('#container');
+container.style.textAlign = 'center';
+
+const image = document.querySelector('img');
+image.style.width = '150px';
+image.style.borderRadius = '50%';
+
+
+// Rainbow Text Exercise
+
+// <!DOCTYPE html>
+
+// <head>
+//     <title>Rainbow</title>
+//     <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+//     <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+//     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+// </head>
+
+// <body>
+//     <!--DON'T TOUCH THIS FILE PLEASE!-->
+//     <h1>
+//         <span>R</span>
+//         <span>A</span>
+//         <span>I</span>
+//         <span>N</span>
+//         <span>B</span>
+//         <span>O</span>
+//         <span>W</span>
+//     </h1>
+// </body>
+
+// </html>
+
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']; //PLEASE DON'T CHANGE THIS LINE!
+
+//YOU CODE GOES HERE:
+const spans = document.querySelectorAll("span");
+
+for (let color in colors) {
+    spans[0].style.color = colors[0];
+    spans[1].style.color = colors[1];
+    spans[2].style.color = colors[2];
+    spans[3].style.color = colors[3];
+    spans[4].style.color = colors[4];
+    spans[5].style.color = colors[5];
+    spans[6].style.color = colors[6];
+}
+
+
+
