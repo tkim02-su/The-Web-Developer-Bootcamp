@@ -392,6 +392,17 @@ for (let i = 0; i < 100; i++) {
     container.appendChild(button);
 }
 
+//click events exercise
+const btnH = document.querySelector("#hello");
+const btnG = document.querySelector("#goodbye");
+
+btnH.addEventListener("click", function () {
+    console.log("hello");
+});
+
+btnG.addEventListener("click", function () {
+    console.log("goodbye");
+});
 
 
 
