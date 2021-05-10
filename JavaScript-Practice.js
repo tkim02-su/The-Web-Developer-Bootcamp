@@ -365,3 +365,35 @@ const lists = document.querySelectorAll('li');
 for (let list of lists) {
     list.classList.toggle('highlight');
 }
+
+// 100 Button Insanity Exercise
+// <!DOCTYPE html>
+
+// <head>
+//     <title>100 Buttons!</title>
+// </head>
+
+// <body>
+//     <!--DO NOT TOUCH THIS FILE PLEASE!-->
+//     <h1>Look At All My Buttons!</h1>
+//     <div id="container">
+
+//     </div>
+// </body>
+
+// </html>
+
+// WRITE YOUR CODE IN HERE:
+
+for (let i = 0; i < 100; i++) {
+    const button = document.createElement("BUTTON");
+    button.innerText = "Hey!";
+    const container = document.querySelector("#container");
+    container.appendChild(button);
+}
+
+
+
+
+
+
