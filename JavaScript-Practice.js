@@ -325,4 +325,43 @@ for (let color in colors) {
 }
 
 
+//ClassList Practice
+// <!DOCTYPE html>
 
+// <head>
+//     <title>ClasList</title>
+//     <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+//     <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+//     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+// </head>
+
+// <body>
+//     <!--LEAVE THIS FILE ALONE!-->
+//     <ul>
+//         <li>Hello</li>
+//         <li class="highlight">Hello</li>
+//         <li>Hello</li>
+//         <li>Hello</li>
+//         <li class="highlight">Hello</li>
+//         <li>Hello</li>
+//     </ul>
+// </body>
+
+// </html>
+
+// CSS
+/*No need to touch anything in this file:*/
+// li {
+//     background-color: #B10DC9;
+//   }
+
+//   .highlight {
+//     background-color: #7FDBFF;
+//   }
+// WRITE YOUR CODE IN HERE:
+const lists = document.querySelectorAll('li');
+
+for (let list of lists) {
+    list.classList.toggle('highlight');
+}
