@@ -404,6 +404,79 @@ btnG.addEventListener("click", function () {
     console.log("goodbye");
 });
 
+// Form Events Exercise
+// <!DOCTYPE html>
+
+// <head>
+//     <title>Grocery List</title>
+//     <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+//     <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+//     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+// </head>
+
+// <body>
+//     <h1>Grocery List</h1>
+//     <form action="/nowhere">
+//         <label for="item">Enter A Product</label>
+//         <input type="text" id="product" name="product">
+//         <label for="item">Enter A Quantity</label>
+//         <input type="number" id="qty" name="qty">
+//         <button>Submit</button>
+//     </form>
+
+//     <ul id="list"></ul>
+// </body>
+
+// </html>
+
+const form = document.querySelector('form');
+const list = document.getElementById('list');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const prdct = document.querySelector('#product');
+    const qty = document.getElementById('qty');
+    addItem(prdct, qty);
+    prdct.value = '';
+    qty.value = '';
+});
+
+const addItem = (product, quantity) => {
+    const newProduct = document.createElement('li');
+    newProduct.innerText = `${quantity.value} ${product.value}`;
+    list.appendChild(newProduct);
+};
+
+// Input Event Practice
+// <!DOCTYPE html>
+
+// <head>
+//     <title>Input Event</title>
+//     <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+//     <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+//     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+// </head>
+
+// <body>
+//     <h1>Enter Your Username</h1>
+//     <input type="text" id="username">
+// </body>
+
+// </html>
+
+const input = document.querySelector('input');
+const h1 = document.querySelector('h1');
+
+input.addEventListener('input', function (e) {
+    if (this.value === "") {
+        h1.innerText = "Enter Your Username";
+    } else {
+        h1.innerText = `Welcome, ${this.value}`;
+    }
+});
+
 
 
 
